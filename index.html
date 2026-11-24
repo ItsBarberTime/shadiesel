@@ -2,473 +2,132 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sha's Diesel Services | Diesel, Heavy Equipment & Mobile Road Service</title>
-<meta name="description" content="Sha's Diesel Services — diagnostics, electrical, hydraulic, preventative maintenance, repairs, fabrication and mobile road service for light and heavy trucks, construction and agriculture equipment. Call 215-645-2146.">
+<meta name="description" content="Sha's Diesel Services: diagnostics, electrical, hydraulic, maintenance, repairs, fabrication and mobile road service for trucks and heavy equipment. Call 215-645-2146.">
+<meta name="theme-color" content="#0b0b0c">
 <link rel="icon" href="fav.png">
+<link rel="apple-touch-icon" href="fav.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --black:#0b0b0c; --char:#151517; --steel:#1f1f23; --line:#2c2c31;
-  --red:#e10b17; --red-dk:#b2070f; --yellow:#ffc21a; --blue:#1d6fe0;
-  --white:#fff; --mute:#a9a9b2;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Barlow',system-ui,sans-serif;background:var(--black);color:var(--white);line-height:1.55;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.wrap{width:min(1180px,92%);margin:0 auto}
-h1,h2,h3,.display{font-family:'Big Shoulders Display',Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:.95}
-.eyebrow{font-weight:700;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--yellow)}
-.btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.95rem;padding:.95rem 1.5rem;border-radius:4px;transition:.2s;border:2px solid transparent;cursor:pointer}
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red-dk)}
-.btn-ghost{border-color:#fff;color:#fff}
-.btn-ghost:hover{background:#fff;color:var(--black)}
-.btn svg{width:18px;height:18px}
-
-/* top bar */
-.topbar{background:var(--red);font-size:.85rem;font-weight:600}
-.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;flex-wrap:wrap}
-.topbar span{display:inline-flex;align-items:center;gap:.4rem}
-
-/* header */
-header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
-.brand{display:flex;align-items:center;gap:.8rem}
-.brand img{height:66px;width:auto}
-.brand b{font-family:'Big Shoulders Display';font-size:1.55rem;font-weight:900;line-height:.9;text-transform:uppercase}
-.brand b small{display:block;font-size:.8rem;letter-spacing:.2em;color:var(--mute);font-weight:800}
-nav ul{display:flex;gap:2rem;list-style:none;font-weight:600;text-transform:uppercase;font-size:.9rem;letter-spacing:.06em}
-nav a:hover{color:var(--yellow)}
-.hdr-call{display:flex;align-items:center;gap:1rem}
-
-/* hero */
-.hero{position:relative;overflow:hidden;padding:6rem 0 5rem;background:
-  radial-gradient(1000px 500px at 85% 20%,rgba(225,11,23,.35),transparent 60%),
-  radial-gradient(700px 400px at 10% 100%,rgba(29,111,224,.18),transparent 60%),
-  linear-gradient(180deg,#0b0b0c,#121214)}
-.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px);pointer-events:none}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
-.hero h1{font-size:clamp(3.2rem,7vw,6rem);font-weight:900;margin:.8rem 0 1.2rem}
-.hero h1 em{font-style:normal;color:var(--red)}
-.hero p.lead{font-size:1.2rem;color:#d6d6dc;max-width:560px;margin-bottom:2rem}
-.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
-.hero .badge{filter:drop-shadow(0 25px 50px rgba(0,0,0,.6))}
-.tags{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.2rem}
-.tags span{border:1px solid var(--line);background:rgba(255,255,255,.04);padding:.45rem .85rem;border-radius:999px;font-size:.85rem;font-weight:600}
-
-/* hazard stripe */
-.stripe{height:12px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 18px,var(--black) 18px 36px)}
-
-/* we work on */
-.fleet{background:var(--char);padding:4.5rem 0}
-.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.2rem}
-.fcard{background:var(--steel);border:1px solid var(--line);border-radius:8px;padding:2rem;position:relative;overflow:hidden}
-.fcard::after{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:var(--red)}
-.fcard:nth-child(2)::after{background:var(--yellow)}
-.fcard:nth-child(3)::after{background:var(--blue)}
-.fcard svg{width:52px;height:52px;margin-bottom:1rem}
-.fcard h3{font-size:1.9rem;margin-bottom:.5rem}
-.fcard p{color:var(--mute)}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap}
-.sec-head h2{font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:900;margin-top:.5rem}
-.sec-head p{color:var(--mute);max-width:460px}
-
-/* services */
-.services{padding:5.5rem 0;background:var(--black)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.6rem}
-.svc{background:linear-gradient(180deg,#18181b,#121214);border:1px solid var(--line);border-radius:8px;padding:1.8rem;transition:.25s}
-.svc:hover{border-color:var(--red);transform:translateY(-3px)}
-.svc .num{font-family:'Big Shoulders Display';font-weight:900;color:var(--red);font-size:1rem;letter-spacing:.15em}
-.svc h3{font-size:1.75rem;margin:.35rem 0 1rem}
-.svc ul{list-style:none;display:grid;gap:.5rem}
-.svc li{position:relative;padding-left:1.3rem;color:#d2d2d8;font-size:.98rem}
-.svc li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;background:var(--yellow);transform:rotate(45deg)}
-.svc.feature{background:linear-gradient(160deg,var(--red),#7d050c);border-color:var(--red)}
-.svc.feature .num{color:var(--yellow)}
-.svc.feature li{color:#fff}
-.svc.feature li::before{background:#fff}
-.svc.wide{grid-column:span 2}
-
-/* road service banner */
-.road{background:var(--red);position:relative;overflow:hidden}
-.road::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(0,0,0,.08) 0 2px,transparent 2px 16px)}
-.road .wrap{position:relative;display:flex;justify-content:space-between;align-items:center;gap:2rem;padding:3.2rem 0;flex-wrap:wrap}
-.road h2{font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900}
-.road p{font-size:1.1rem;max-width:560px;margin-top:.4rem}
-.road .btn{background:var(--black);color:#fff}
-.road .btn:hover{background:#000}
-
-/* process */
-.process{padding:5.5rem 0;background:var(--char)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:2.6rem;counter-reset:s}
-.step{border-top:3px solid var(--line);padding-top:1.3rem;counter-increment:s}
-.step::before{content:"0" counter(s);font-family:'Big Shoulders Display';font-weight:900;font-size:3rem;color:var(--red);display:block;line-height:1}
-.step h3{font-size:1.45rem;margin:.6rem 0 .4rem}
-.step p{color:var(--mute);font-size:.98rem}
-
-/* policies */
-.policies{padding:4rem 0;background:var(--black);border-top:1px solid var(--line)}
-.pol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
-.pol{background:var(--steel);border-radius:8px;padding:1.4rem;border-left:4px solid var(--yellow)}
-.pol b{display:block;font-family:'Big Shoulders Display';font-size:1.3rem;text-transform:uppercase;margin-bottom:.25rem}
-.pol span{color:var(--mute);font-size:.95rem}
-
-/* contact */
-.contact{padding:5.5rem 0;background:
-  radial-gradient(800px 400px at 0% 0%,rgba(225,11,23,.22),transparent 60%),var(--char)}
-.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem}
-.contact h2{font-size:clamp(2.6rem,5vw,4rem);font-weight:900;margin:.5rem 0 1rem}
-.contact p.sub{color:var(--mute);margin-bottom:2rem}
-.cline{display:flex;align-items:center;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
-.cline .ic{width:48px;height:48px;border-radius:6px;background:var(--red);display:grid;place-items:center;flex:none}
-.cline .ic svg{width:22px;height:22px}
-.cline small{display:block;color:var(--mute);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:700}
-.cline strong{font-size:1.25rem}
-form{background:var(--steel);border:1px solid var(--line);border-radius:10px;padding:2rem}
-form h3{font-size:2rem;margin-bottom:1.2rem}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:.35rem}
-input,select,textarea{width:100%;background:#0f0f11;border:1px solid var(--line);color:#fff;padding:.85rem .9rem;border-radius:5px;font:inherit;margin-bottom:1rem}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red)}
-textarea{min-height:110px;resize:vertical}
-form .btn{width:100%;justify-content:center}
-.form-note{font-size:.88rem;color:var(--mute);margin-top:.8rem;text-align:center}
-#formMsg{display:none;margin-top:1rem;padding:1rem;border-radius:6px;background:rgba(255,194,26,.12);border:1px solid var(--yellow);font-size:.95rem}
-
-footer{background:#060607;padding:3rem 0 2rem;border-top:4px solid var(--red)}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
-.foot img{height:110px}
-.foot ul{list-style:none;display:flex;gap:1.6rem;flex-wrap:wrap;font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}
-.copy{margin-top:2rem;padding-top:1.4rem;border-top:1px solid var(--line);color:var(--mute);font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-
-.callbar{display:none}
-
-@media (max-width:980px){
-  nav{display:none}
-  .hero .wrap,.contact .wrap{grid-template-columns:1fr}
-  .hero .badge{max-width:340px;margin:0 auto;order:-1}
-  .fleet-grid,.svc-grid{grid-template-columns:1fr 1fr}
-  .steps,.pol-grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width:640px){
-  .topbar{display:none}
-  header .wrap{height:70px}
-  .brand img{height:52px}
-  .hdr-call .btn span{display:none}
-  .hero{padding:3rem 0 4rem}
-  .fleet-grid,.svc-grid,.steps,.pol-grid,.row{grid-template-columns:1fr}
-  .svc.wide{grid-column:auto}
-  .callbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60}
-  .callbar a{flex:1;text-align:center;padding:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
-  .callbar a:first-child{background:var(--red)}
-  .callbar a:last-child{background:var(--yellow);color:var(--black)}
-  body{padding-bottom:56px}
-}
-@media print{
-  header{position:static}
-  .callbar{display:none!important}
-  .svc:hover{transform:none}
-  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  section,.road,.fcard,.svc,.step,.pol,form{break-inside:avoid}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="topbar"><div class="wrap">
-  <span>Light &amp; Heavy Trucks &nbsp;•&nbsp; Construction &amp; Agriculture Equipment &nbsp;•&nbsp; Road Service</span>
+  <span>Light &amp; Heavy Trucks &nbsp;&bull;&nbsp; Construction &amp; Agriculture Equipment &nbsp;&bull;&nbsp; Road Service</span>
   <span>Call / Text: 215-645-2146</span>
 </div></div>
 
 <header><div class="wrap">
-  <a href="#top" class="brand">
+  <a href="index.html" class="brand">
     <img src="logo.webp" alt="Sha's Diesel Services logo">
     <b>Sha's<small>Diesel Services</small></b>
   </a>
-  <nav><ul>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#road">Road Service</a></li>
-    <li><a href="#process">How It Works</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul></nav>
-  <div class="hdr-call">
-    <a class="btn btn-red" href="tel:+12156452146">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
-      <span>215-645-2146</span>
-    </a>
+  <nav><ul class="nav-links"><li><a href="index.html" class="active">Home</a></li><li><a href="services.html">Services</a></li><li><a href="road-service.html">Road Service</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <div class="hdr-right">
+    <a class="btn btn-red hdr-call" href="tel:+12156452146" aria-label="Call 215-645-2146"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><span>215-645-2146</span></a>
+    <button class="menu-btn" data-open-menu aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </div></header>
 
-<main id="top">
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="mnav-top">
+    <img src="logo.webp" alt="Sha's Diesel Services">
+    <button class="menu-btn" style="display:inline-flex" data-close-menu aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <ul><li><a href="index.html" class="active">Home<span>&rarr;</span></a></li><li><a href="services.html">Services<span>&rarr;</span></a></li><li><a href="road-service.html">Road Service<span>&rarr;</span></a></li><li><a href="contact.html">Contact<span>&rarr;</span></a></li></ul>
+  <a class="btn btn-red" href="tel:+12156452146"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg> Call 215-645-2146</a>
+  <a class="btn btn-ghost" href="contact.html">Request Service</a>
+</div>
+
+<main>
+
 <section class="hero"><div class="wrap">
   <div>
-    <div class="eyebrow">Diesel Repair • Heavy Equipment • Mobile Service</div>
+    <div class="eyebrow">Diesel Repair &bull; Heavy Equipment &bull; Mobile Service</div>
     <h1>Built for the<br><em>heavy</em> work.</h1>
-    <p class="lead">From pickups to semis, excavators to tractors — Sha's Diesel Services diagnoses, repairs and maintains the machines that keep your business moving. In the shop or out on the road.</p>
+    <p class="lead">From pickups to semis, excavators to tractors &mdash; Sha's Diesel Services diagnoses, repairs and maintains the machines that keep your business moving. In the shop or out on the road.</p>
     <div class="cta">
-      <a class="btn btn-red" href="#contact">Request Service</a>
-      <a class="btn btn-ghost" href="#services">View Services</a>
+      <a class="btn btn-red" href="contact.html">Request Service</a>
+      <a class="btn btn-ghost" href="services.html">Our Services</a>
     </div>
-    <div class="tags">
-      <span>Diesel Trucks</span><span>Semi Trucks</span><span>Construction Equipment</span><span>Agriculture Equipment</span><span>Forklifts</span><span>Roadside &amp; Mobile</span>
-    </div>
+    <div class="tags"><span>Diesel Trucks</span><span>Semi Trucks</span><span>Construction Equipment</span><span>Agriculture Equipment</span><span>Forklifts</span><span>Roadside &amp; Mobile</span></div>
   </div>
-  <img class="badge" src="logo.webp" alt="Sha's Diesel Services — Est. 2025">
+  <img class="badge" src="logo.webp" alt="Sha's Diesel Services &mdash; Est. 2025">
 </div></section>
-
 <div class="stripe"></div>
 
-<section class="fleet"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">What We Work On</div><h2>Every machine. One call.</h2></div>
-    <p>Whether it's a work truck, a fleet rig or a machine on a job site, we bring the tools and know-how to get it running right.</p>
-  </div>
+<section class="block bg-char"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">What We Work On</div><h2>Every machine. One call.</h2></div>
+  <p>Work trucks, fleet rigs or machines on a job site &mdash; we bring the tools and know-how to get them running right.</p></div>
   <div class="fleet-grid">
-    <div class="fcard">
-      <svg viewBox="0 0 64 64" fill="none" stroke="#e10b17" stroke-width="3"><path d="M4 44V22h30v22M34 30h14l8 10v4H34"/><circle cx="16" cy="48" r="5"/><circle cx="46" cy="48" r="5"/></svg>
-      <h3>Light &amp; Heavy Trucks</h3>
-      <p>Diesel pickups, box trucks, work trucks and tractor-trailers — diagnostics, maintenance and repair.</p>
-    </div>
-    <div class="fcard">
-      <svg viewBox="0 0 64 64" fill="none" stroke="#ffc21a" stroke-width="3"><path d="M6 46h30V34H14l-8 6zM24 34V22l16-12 14 14-6 6M48 30l2 10"/><circle cx="12" cy="50" r="4"/><circle cx="30" cy="50" r="4"/></svg>
-      <h3>Construction Equipment</h3>
-      <p>Excavators, loaders, forklifts and more — hydraulic, electrical and engine work in the field.</p>
-    </div>
-    <div class="fcard">
-      <svg viewBox="0 0 64 64" fill="none" stroke="#1d6fe0" stroke-width="3"><path d="M8 40V26h18l6 8h14v10M26 26V16h10"/><circle cx="18" cy="44" r="10"/><circle cx="50" cy="48" r="6"/></svg>
-      <h3>Agriculture Equipment</h3>
-      <p>Tractors and farm machinery — keeping your equipment ready when the season can't wait.</p>
-    </div>
+    <div class="fcard"><svg viewBox="0 0 64 64" fill="none" stroke="#e10b17" stroke-width="3"><path d="M4 44V22h30v22M34 30h14l8 10v4H34"/><circle cx="16" cy="48" r="5"/><circle cx="46" cy="48" r="5"/></svg><h3>Light &amp; Heavy Trucks</h3><p>Diesel pickups, box trucks, work trucks and tractor-trailers.</p></div>
+    <div class="fcard"><svg viewBox="0 0 64 64" fill="none" stroke="#ffc21a" stroke-width="3"><path d="M6 46h30V34H14l-8 6zM24 34V22l16-12 14 14-6 6M48 30l2 10"/><circle cx="12" cy="50" r="4"/><circle cx="30" cy="50" r="4"/></svg><h3>Construction Equipment</h3><p>Excavators, loaders, forklifts and more.</p></div>
+    <div class="fcard"><svg viewBox="0 0 64 64" fill="none" stroke="#1d6fe0" stroke-width="3"><path d="M8 40V26h18l6 8h14v10M26 26V16h10"/><circle cx="18" cy="44" r="10"/><circle cx="50" cy="48" r="6"/></svg><h3>Agriculture Equipment</h3><p>Tractors and farm machinery, ready when the season can't wait.</p></div>
   </div>
 </div></section>
 
-<section class="services" id="services"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">Our Services</div><h2>Full-service diesel care</h2></div>
-    <p>Estimates are available on request. Call or send us the details and we'll let you know what it'll take.</p>
-  </div>
-  <div class="svc-grid">
-    <div class="svc">
-      <div class="num">01</div><h3>Diagnostics</h3>
-      <ul>
-        <li>Basic &amp; Advanced Diagnostics (Check Engine &amp; Drivetrain)</li>
-        <li>Electrical System &amp; CAN Bus Diagnostics</li>
-        <li>HVAC System Diagnostics</li>
-      </ul>
-    </div>
-    <div class="svc">
-      <div class="num">02</div><h3>Electrical Services</h3>
-      <ul>
-        <li>Complete Electrical System Inspection</li>
-        <li>Wiring &amp; Ground Repair</li>
-        <li>Starter / Alternator Circuit Diagnosis</li>
-        <li>ECM / PCM Pinout &amp; Voltage Checks</li>
-        <li>Custom Harness Fabrication</li>
-        <li>Trailer Plug &amp; Connector Repair</li>
-        <li>Lighting &amp; Accessory Install / Wiring</li>
-        <li>Battery Cable &amp; Terminal Service</li>
-        <li>Parasitic Draw / Battery Drain Testing</li>
-      </ul>
-    </div>
-    <div class="svc">
-      <div class="num">03</div><h3>Preventative Maintenance</h3>
-      <ul>
-        <li>Heavy-Duty Oil, Fuel &amp; Air Filter Service</li>
-        <li>Coolant &amp; DEF Service</li>
-        <li>Transmission &amp; Differential Service</li>
-        <li>Brake Service</li>
-        <li>Belt &amp; Tensioner Replacement</li>
-        <li>Battery Testing &amp; Maintenance</li>
-      </ul>
-    </div>
-    <div class="svc">
-      <div class="num">04</div><h3>Common Repairs</h3>
-      <ul>
-        <li>Injector &amp; Sensor Replacement</li>
-        <li>Turbocharger &amp; Exhaust Repair</li>
-        <li>Forced DPF Regeneration</li>
-        <li>Water Pump Replacement</li>
-        <li>Starter / Alternator Replacement</li>
-        <li>Glow Plug &amp; Ignition Repair</li>
-        <li>Light Install &amp; Fuse Box Troubleshooting</li>
-        <li>Suspension, Shock &amp; Air Ride Repairs</li>
-        <li>Cab, Boom &amp; Trailer Rewiring</li>
-      </ul>
-    </div>
-    <div class="svc">
-      <div class="num">05</div><h3>Hydraulic Services</h3>
-      <ul>
-        <li>Hydraulic Hose &amp; Cylinder Repair</li>
-        <li>Pump &amp; Valve Troubleshooting</li>
-        <li>Hydraulic Fluid Service &amp; Leak Repair</li>
-        <li>Control Lever Calibration</li>
-      </ul>
-    </div>
-    <div class="svc">
-      <div class="num">06</div><h3>Fabrication &amp; Custom Work</h3>
-      <ul>
-        <li>Custom Brackets &amp; Mounts</li>
-        <li>Light Bar &amp; Work Light Fabrication</li>
-        <li>Exhaust Welding &amp; Trailer Wiring</li>
-        <li>Tool Box &amp; Step Installations</li>
-      </ul>
-    </div>
-    <div class="svc feature">
-      <div class="num">07</div><h3>Mobile &amp; Road Service</h3>
-      <ul>
-        <li>Roadside / Mobile / Emergency Service</li>
-        <li>Heavy Equipment Field Service</li>
-        <li>Install of Customer-Supplied Parts</li>
-      </ul>
-    </div>
-    <div class="svc wide" style="display:flex;flex-direction:column;justify-content:center;background:var(--steel)">
-      <div class="eyebrow">Don't see it listed?</div>
-      <h3 style="margin-top:.5rem">If it runs on diesel, ask us.</h3>
-      <p style="color:var(--mute);margin-bottom:1.2rem">Give us a call with your make, model and what's going on — we'll tell you straight whether we can handle it.</p>
-      <div><a class="btn btn-red" href="tel:+12156452146">Call 215-645-2146</a></div>
-    </div>
-  </div>
+<section class="block"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">Our Services</div><h2>What we do</h2></div>
+  <p>Tap a service to see everything included.</p></div>
+  <div class="tiles"><a class="tile" href="services.html#diagnostics"><div><div class="num">01</div><h3>Diagnostics</h3></div><div class="go">View &rarr;</div></a><a class="tile" href="services.html#electrical"><div><div class="num">02</div><h3>Electrical Services</h3></div><div class="go">View &rarr;</div></a><a class="tile" href="services.html#maintenance"><div><div class="num">03</div><h3>Preventative Maintenance</h3></div><div class="go">View &rarr;</div></a><a class="tile" href="services.html#repairs"><div><div class="num">04</div><h3>Common Repairs</h3></div><div class="go">View &rarr;</div></a><a class="tile" href="services.html#hydraulic"><div><div class="num">05</div><h3>Hydraulic Services</h3></div><div class="go">View &rarr;</div></a><a class="tile" href="services.html#fabrication"><div><div class="num">06</div><h3>Fabrication &amp; Custom Work</h3></div><div class="go">View &rarr;</div></a><a class="tile hot" href="road-service.html"><div><div class="num">07</div><h3>Mobile &amp; Road Service</h3></div><div class="go">View &rarr;</div></a><a class="tile" href="services.html"><div><div class="num">ALL</div><h3>See Every Service</h3></div><div class="go">Full list &rarr;</div></a></div>
 </div></section>
 
-<section class="road" id="road"><div class="wrap">
+<section class="road"><div class="wrap">
   <div>
     <div class="eyebrow" style="color:#fff">Broke down? Stuck on site?</div>
     <h2>We come to you.</h2>
-    <p>Roadside, mobile and emergency service for trucks and heavy equipment — on the highway, at your yard or on the job site.</p>
+    <p>Roadside, mobile and emergency service for trucks and heavy equipment &mdash; on the highway, at your yard or on the job site.</p>
   </div>
-  <a class="btn" href="tel:+12156452146">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
-    Call 215-645-2146
-  </a>
+  <a class="btn btn-dark" href="tel:+12156452146"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg> Call 215-645-2146</a>
 </div></section>
 
-<section class="process" id="process"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">How It Works</div><h2>Straightforward service</h2></div>
-    <p>No runaround. You'll know what's wrong and what it takes to fix it before we start.</p>
-  </div>
+<section class="block bg-char"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">How It Works</div><h2>Straightforward service</h2></div>
+  <p>No runaround. You'll know what's wrong and what it takes to fix it before we start.</p></div>
   <div class="steps">
-    <div class="step"><h3>Call or Request</h3><p>Reach out by phone, email or the form below with your vehicle or equipment details.</p></div>
-    <div class="step"><h3>Diagnose</h3><p>We find the real problem — engine, electrical, hydraulic or drivetrain.</p></div>
-    <div class="step"><h3>Estimate</h3><p>Estimates are provided on request so there are no surprises.</p></div>
-    <div class="step"><h3>Back to Work</h3><p>We complete the repair and get you back on the road or the job site.</p></div>
+    <div class="step"><h3>Call or Request</h3><p>Reach out by phone or the request form with your vehicle or equipment details.</p></div>
+    <div class="step"><h3>Diagnose</h3><p>We find the real problem &mdash; engine, electrical, hydraulic or drivetrain.</p></div>
+    <div class="step"><h3>Estimate</h3><p>Estimates are provided on request, so there are no surprises.</p></div>
+    <div class="step"><h3>Back to Work</h3><p>We complete the repair and get you back on the road or job site.</p></div>
   </div>
 </div></section>
 
-<section class="policies"><div class="wrap">
-  <div class="eyebrow">Good to Know</div>
-  <div class="pol-grid">
-    <div class="pol"><b>Estimates</b><span>Provided upon request.</span></div>
-    <div class="pol"><b>Warranty</b><span>See your service invoice for details.</span></div>
-    <div class="pol"><b>Payment</b><span>Due upon completion of work.</span></div>
-    <div class="pol"><b>Environmental</b><span>Fluids and parts disposed of properly.</span></div>
+<section class="block"><div class="wrap">
+  <div class="callcard">
+    <div class="eyebrow">Ready when you are</div>
+    <a class="display" href="tel:+12156452146">215-645-2146</a>
+    <div class="cta" style="justify-content:center">
+      <a class="btn btn-red" href="tel:+12156452146"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg> Call Now</a>
+      <a class="btn btn-ghost" href="contact.html">Request Service</a>
+    </div>
   </div>
 </div></section>
 
-<section class="contact" id="contact"><div class="wrap">
-  <div>
-    <div class="eyebrow">Get In Touch</div>
-    <h2>Let's get you rolling.</h2>
-    <p class="sub">Call for the fastest response, especially for roadside and emergency service.</p>
-    <a class="cline" href="tel:+12156452146">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></span>
-      <span><small>Phone</small><strong>215-645-2146</strong></span>
-    </a>
-    <a class="cline" href="mailto:shahid.ali@shadieselservices.com">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1Zm9 7.2L4 7.4V17h16V7.4l-8 4.8Zm0-2.3L19.2 7H4.8L12 9.9Z"/></svg></span>
-      <span><small>Email</small><strong>shahid.ali@shadieselservices.com</strong></span>
-    </a>
-    <div class="cline">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7Zm0 4.5A2.5 2.5 0 1 0 12 11.5 2.5 2.5 0 0 0 12 6.5Z"/></svg></span>
-      <span><small>Service</small><strong>In-shop &amp; mobile — we come to you</strong></span>
-    </div>
-  </div>
-
-  <form id="quote">
-    <h3>Request Service</h3>
-    <div class="row">
-      <div><label for="n">Name</label><input id="n" required placeholder="Your name"></div>
-      <div><label for="p">Phone</label><input id="p" type="tel" required placeholder="(215) 000-0000"></div>
-    </div>
-    <div class="row">
-      <div><label for="v">Vehicle / Equipment</label><input id="v" placeholder="e.g. 2019 Peterbilt 579"></div>
-      <div><label for="s">Service Needed</label>
-        <select id="s">
-          <option>Diagnostics</option><option>Electrical</option><option>Preventative Maintenance</option>
-          <option>Repair</option><option>Hydraulic</option><option>Fabrication / Custom</option>
-          <option>Roadside / Mobile / Emergency</option><option>Other</option>
-        </select></div>
-    </div>
-    <label for="m">What's going on?</label>
-    <textarea id="m" placeholder="Describe the problem, location, and when you need it done"></textarea>
-    <button class="btn btn-red" type="submit">Send Request</button>
-    <p class="form-note">Emergency? Call 215-645-2146 for the fastest response.</p>
-    <div id="formMsg"></div>
-  </form>
-</div></section>
 </main>
 
 <footer><div class="wrap">
   <div class="foot">
-    <img src="logo.webp" alt="Sha's Diesel Services">
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#road">Road Service</a></li>
-      <li><a href="#process">How It Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div style="text-align:right">
-      <div class="display" style="font-size:1.8rem">215-645-2146</div>
-      <div style="color:var(--mute)">shahid.ali@shadieselservices.com</div>
+    <a href="index.html"><img src="logo.webp" alt="Sha's Diesel Services"></a>
+    <ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="road-service.html">Road Service</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="foot-contact">
+      <a class="display" href="tel:+12156452146">215-645-2146</a>
+      <a href="mailto:shahid.ali@shadieselservices.com"><span>shahid.ali@shadieselservices.com</span></a>
     </div>
   </div>
   <div class="copy">
-    <span>© <span id="yr">2026</span> Sha's Diesel Services. All rights reserved.</span>
-    <span>Est. 2025 • ShaDieselServices.com</span>
+    <span>&copy; <span class="yr">2026</span> Sha's Diesel Services. All rights reserved.</span>
+    <span>Est. 2025 &bull; ShaDieselServices.com</span>
   </div>
 </div></footer>
 
 <div class="callbar">
-  <a href="tel:+12156452146">Call Now</a>
-  <a href="#contact">Request Service</a>
+  <a href="tel:+12156452146"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg> Call Now</a>
+  <a href="contact.html">Request Service</a>
 </div>
 
-<script>
-try{document.getElementById('yr').textContent=new Date().getFullYear()}catch(e){}
-// ===== CHANGE THIS to the email that should receive form requests =====
-var FORM_EMAIL = 'shahiid.ali@gmail.com';
-// =======================================================================
-
-document.getElementById('quote').addEventListener('submit',function(e){
-  e.preventDefault();
-  var g=function(id){return document.getElementById(id).value.trim()};
-  var btn=this.querySelector('button'), msg=document.getElementById('formMsg');
-  btn.disabled=true; btn.textContent='Sending...';
-  fetch('https://formsubmit.co/ajax/'+FORM_EMAIL,{
-    method:'POST',
-    headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({
-      _subject:'New Service Request - '+g('s'),
-      _template:'table',
-      _captcha:'false',
-      Name:g('n'), Phone:g('p'), 'Vehicle / Equipment':g('v'),
-      'Service Needed':g('s'), Details:g('m')
-    })
-  }).then(function(r){return r.json()}).then(function(d){
-    if(d.success==='false'||d.success===false) throw new Error();
-    msg.style.display='block';
-    msg.textContent='Thanks! Your request was sent. We\'ll get back to you shortly. Need help now? Call 215-645-2146.';
-    document.getElementById('quote').reset();
-  }).catch(function(){
-    msg.style.display='block';
-    msg.textContent='Sorry, something went wrong sending your request. Please call or text 215-645-2146.';
-  }).finally(function(){btn.disabled=false; btn.textContent='Send Request';});
-});
-</script>
+<script src="site.js"></script>
 </body>
 </html>
