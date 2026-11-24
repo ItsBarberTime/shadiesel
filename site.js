@@ -1,5 +1,5 @@
 // ===== Email that receives form requests =====
-var FORM_EMAIL = 'shahiid.ali@gmail.com';
+var FORM_EMAIL = 'rtawam215@gmail.com';
 var PHONE = '215-645-2146';
 // =============================================
 
