@@ -331,11 +331,11 @@ footer{background:#060607;padding:3rem 0 2rem;border-top:4px solid var(--red)}
 .work-home{overflow:hidden}
 .marquee{overflow:hidden;padding:.4rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .marquee + .marquee{margin-top:.9rem}
-.mq-track{display:flex;gap:1rem;width:max-content;animation:mqLeft linear infinite}
+.mq-track{--mqgap:1rem;display:flex;gap:var(--mqgap);width:max-content;animation:mqLeft linear infinite;will-change:transform}
 .mq-b{animation-name:mqRight}
 .marquee:hover .mq-track,.marquee.paused .mq-track{animation-play-state:paused}
-@keyframes mqLeft{from{transform:translateX(0)}to{transform:translateX(calc(-50% - .5rem))}}
-@keyframes mqRight{from{transform:translateX(calc(-50% - .5rem))}to{transform:translateX(0)}}
+@keyframes mqLeft{from{transform:translate3d(0,0,0)}to{transform:translate3d(calc(-50% - var(--mqgap) / 2),0,0)}}
+@keyframes mqRight{from{transform:translate3d(calc(-50% - var(--mqgap) / 2),0,0)}to{transform:translate3d(0,0,0)}}
 .mq-card{flex:none;aspect-ratio:auto}
 .mq-a .mq-card{width:300px;height:380px}
 .mq-b .mq-card{width:240px;height:180px}
@@ -355,7 +355,5 @@ footer{background:#060607;padding:3rem 0 2rem;border-top:4px solid var(--red)}
   .mq-a .mq-card{width:230px;height:290px}
   .mq-b .mq-card{width:170px;height:130px}
   .mq-a .mq-card .gcap b{font-size:1.35rem}
-  .mq-track{gap:.65rem}
-  @keyframes mqLeft{from{transform:translateX(0)}to{transform:translateX(calc(-50% - .325rem))}}
-  @keyframes mqRight{from{transform:translateX(calc(-50% - .325rem))}to{transform:translateX(0)}}
+  .mq-track{--mqgap:.65rem}
 }
