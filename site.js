@@ -116,3 +116,9 @@ try { document.querySelectorAll('.yr').forEach(function(el){ el.textContent = ne
     if(Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
   });
 })();
+
+// Pause moving photo rows while a finger is on them
+document.querySelectorAll('[data-marquee]').forEach(function(m){
+  m.addEventListener('touchstart', function(){ m.classList.add('paused'); }, {passive:true});
+  m.addEventListener('touchend', function(){ setTimeout(function(){ m.classList.remove('paused'); }, 1500); });
+});
