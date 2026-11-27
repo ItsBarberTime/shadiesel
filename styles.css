@@ -285,3 +285,23 @@ footer{background:#060607;padding:3rem 0 2rem;border-top:4px solid var(--red)}
 .faq details p a{color:var(--yellow);text-decoration:underline}
 @media (max-width:980px){.pol-6{grid-template-columns:1fr 1fr}.about,.about-teaser{grid-template-columns:1fr}.about-side img{width:180px}}
 @media (max-width:640px){.pol-6{grid-template-columns:1fr}.about-teaser .btn{width:100%}}
+
+/* homepage work mosaic (7 newest jobs) */
+.bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:230px}
+.bento .gcard{aspect-ratio:auto;height:100%}
+.bento .gcard:nth-child(1){grid-column:span 2;grid-row:span 2}
+.bento .gcard:nth-child(6),.bento .gcard:nth-child(7){grid-column:span 2}
+.bento .gcard:nth-child(1) .gcap b{font-size:2.3rem}
+@media (max-width:980px){
+  .bento{grid-template-columns:repeat(3,1fr);grid-auto-rows:210px}
+  .bento .gcard:nth-child(6){grid-column:auto}
+  .bento .gcard:nth-child(7){grid-column:span 3}
+}
+@media (max-width:640px){
+  .bento{grid-template-columns:1fr 1fr;grid-auto-rows:185px;gap:.6rem}
+  .bento .gcard:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .bento .gcard:nth-child(6),.bento .gcard:nth-child(7){grid-column:auto}
+  .bento .gcard:nth-child(1) .gcap b{font-size:1.8rem}
+  .bento .gcard:nth-child(1) .gcap small{display:block}
+}
+.bento .gcard:nth-child(6) img,.bento .gcard:nth-child(7) img{object-position:center 45%}
